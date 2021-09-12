@@ -1,0 +1,531 @@
+html, body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding: 0.7rem ;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 1.75rem;
+    margin:0;
+}
+
+.logo img{
+    width: 50%;
+    height: 30%;
+    
+     
+}
+
+header{
+    
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+
+ .navigation{
+   
+    display: flex; 
+    align-items: center;
+
+}
+
+
+
+
+.fa{
+    padding: 0 0.5rem;
+}
+
+
+.hero{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 42.1875rem;
+
+    background-image: url(../images/hero-image-1-169.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(155, 89, 182, 0.5);
+    background-blend-mode: overlay;
+    border: 1px solid gray;
+      
+}
+
+
+
+
+.hero h1{
+   color: white;
+   
+   margin: 4rem 0 1.5rem 4rem;
+}
+
+.hero-button {
+    transition: all .3s ease-out;
+    margin-left: 20rem;
+    background-color: white;
+    color: purple;
+    border: 1px solid purple;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1.575rem;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.hero-button:hover{
+    margin-top: 0.3125rem;
+    background-color: purple;
+    color: white;
+    border: 1px solid white;
+    
+}
+
+@media only screen and (max-width:790px){
+    .reseausociaux{
+        display: none;
+    }
+    
+   
+}
+
+@media only screen and (max-width:680px){
+    .logo{
+        display: none;
+    }
+
+    /* .hero{
+        width: 100%;
+        height: 22rem;
+        background-size: contain;
+    
+    } */
+    
+}
+
+.section-title{
+    margin-top: 2rem;
+    margin: auto;
+    text-align: center;
+    color: rgba(155, 89, 182, 0.9);
+
+}
+.activities{
+    width: 100%;
+    height: 50rem;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr) ;
+    margin-top: 2rem;
+    
+}
+
+.foot, .workout, .cyclisme, .natation{
+    grid-row: 1 / span 1;
+    
+}
+
+
+
+.foot{
+    grid-column: 1 / 2 ;
+    background-image: url(../images/images_sport/foot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+   
+}
+
+.workout{
+    grid-column: 2 / 3 ;
+    background-image: url(../images/images_sport/workout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+.cyclisme{
+    grid-column: 3 / 4 ;
+    background-image: url(../images/images_sport/bycicle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.boxing{
+    grid-column: 4 / 5 ;
+    background-image: url(../images/images_sport/boxing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+.footam, .yoga, .nutrition, .basket{
+    grid-row: 2 / span 1;
+    
+}
+
+.footam{
+    grid-column: 1 / 2 ;
+    background-image: url(../images/images_sport/football_am.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.yoga{
+    grid-column: 2 / 3 ;
+    background-image: url(../images/images_sport/yoga.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nutrition{
+    grid-column: 3 / 4 ;
+    background-image: url(../images/images_sport/nutrition.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.basket{
+    grid-column: 4 / 5 ;
+    background-image: url(../images/images_sport/basketball.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    
+}
+
+.image-sport {
+
+    transition: all .3s ease-out;
+ 
+}
+
+.image-sport:hover {
+  
+    background-color: rgba(155, 89, 182, 0.9);
+    background-blend-mode: overlay;
+    transform: scale(1.025);
+ 
+}
+
+.image-sport a{
+    display: none;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+/* .image-sport:hover{
+    filter: brightness(0.4);
+} */
+.image-sport:hover a{
+    display:initial;
+    color: white;
+    float: left;
+    
+}
+
+@media only screen and (max-width:680px){
+
+    .activities{
+        height: 4000px;
+        grid-template: repeat(8, 1fr) / 1fr ;
+        width: auto;
+    }
+      
+    .image-sport{
+        grid-column: 1 / 2; 
+    }
+    .foot{
+        grid-row: 1 / 2 ; 
+        
+    }
+    
+    .workout{
+        grid-row: 2 / 3 ;
+        ; 
+           
+    }
+    
+    .cyclisme{
+        grid-row: 3 / 4 ;
+        
+    }
+    
+    .boxing{
+        grid-row: 4 / 5 ;
+  
+    }
+       
+    .footam{
+        grid-row: 5 / 6 ;
+        
+    }
+    
+    .yoga{
+        grid-row: 6 / 7 ;
+ 
+    }
+    
+    .nutrition{
+        grid-row: 7 / 8 ;
+        
+        
+    }
+    
+    .basket{
+        grid-row: 8 / 9 ;        
+    }
+  
+    
+}
+
+
+.benefit{
+    width: 100%;
+    height: 35rem;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr) ;
+    margin-top: 2rem;
+    
+}
+
+.gym-center, .all-sports, .strong, .teams{
+    grid-row: 1 / span 1;
+    
+}
+
+
+
+.gym-center{
+    grid-column: 1 / 2 ;
+    /* background-image: url(../images/icone_sport/musculation.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+   
+}
+
+.all-sports{
+    grid-column: 2 / 3 ;
+    /* background-image: url(../images/icone_sport/swimming.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+}
+
+.strong{
+    grid-column: 3 / 4 ;
+    /* background-image: url(../images/icone_sport/mvp.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+
+.teams{
+    grid-column: 4 / 5 ;
+    /* background-image: url(../images/icone_sport/chemise-de-sport.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+}
+
+.quick-easy, .cheap, .pilate, .fight{
+    grid-row: 2 / span 1;
+    
+}
+
+.quick-easy{
+    grid-column: 1 / 2 ;
+    /* background-image: url(../images/icone_sport/concurrence.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.cheap{
+    grid-column: 2 / 3 ;
+    /* background-image: url(../images/icone_sport/loss.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pilate{
+    grid-column: 3 / 4 ;
+    /* background-image: url(../images/icone_sport/lotus.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.fight{
+    grid-column: 4 / 5 ;
+    /* background-image: url(../images/icone_sport/boxing.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+
+.image-benefit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image-benefit p{
+    margin: 0 1.5rem;
+    padding: 0;
+    text-align: center;
+}
+
+.image-benefit h3{
+    margin: 0.5rem 0 0.75rem 0;
+    padding: 0;
+}
+
+.image-benefit img{
+    width: 30%;
+    height: auto;
+}
+
+@media only screen and (max-width:680px){
+    .benefit{
+        grid-template: repeat(8, 1fr) / 1fr;
+        height: 125rem;
+
+    }
+    .image-benefit {
+        grid-column: 1 / 2;
+        margin-bottom: 2rem;
+    }
+
+    .image-benefit h3{
+        margin:  0.5rem 0;
+        padding: 0;
+    }
+
+    .image-benefit p{
+        margin:  0;
+        padding: 0 3rem;
+    }
+
+    .gym-center{
+        grid-row: 1 / 2 ;
+        
+       
+    }
+    
+    .all-sports{
+        grid-row: 2 / 3 ;
+      
+    }
+    
+    .strong{
+        grid-row: 3 / 4 ;
+       
+    }
+    
+    .teams{
+        grid-row: 4 / 5 ;
+      
+    }
+    
+     
+    .quick-easy{
+        grid-row: 5 / 6 ;
+        
+    }
+    
+    .cheap{
+        grid-row: 6 / 7 ;
+      
+    }
+    
+    .pilate{
+        grid-row: 7 / 8 ;
+      
+    }
+    
+    .fight{
+        grid-row: 8 / 9 ;
+      
+        
+    }
+}
+
+footer{
+    /* width: 100%; */
+    height: 10rem;
+    margin-top: 2rem;
+    background-color: rgba(155, 89, 182, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.info-footer{
+    width: 50%;
+    height:70%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .logo{
+    /* border: 1px solid red; */
+    width: 25%;
+    margin: 0;
+    padding-right:0 ;
+}
+
+.logo img{
+    margin:0;
+    padding:0;
+    /* border: 1px solid blue; */
+}
+
+@media only screen and (max-width:790px){
+    .info-footer{
+        width: 70%;
+        display: flex;
+    justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:680px){
+    .info-footer{
+        width: 90%;
+        display: flex;
+    justify-content: space-around;
+    }
+}
