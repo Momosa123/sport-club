@@ -50,8 +50,6 @@ header{
 }
 
 
-
-
 .fa{
     padding: 0 0.5rem;
 }
@@ -62,28 +60,29 @@ header{
     padding: 0;
     width: 100%;
     height: 42.1875rem;
-
     background-image: url(../images/hero-image-1-169.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(155, 89, 182, 0.5);
     background-blend-mode: overlay;
-    border: 1px solid gray;
-      
+    border: 1px solid gray;    
 }
 
-
-
+.hero-content{
+    width: 30rem;
+    height: auto;
+    margin: 4rem 0 1.5rem 4rem;
+    text-align: center;
+}
 
 .hero h1{
    color: white;
-   
-   margin: 4rem 0 1.5rem 4rem;
+   margin-bottom: 1rem;
 }
 
 .hero-button {
     transition: all .3s ease-out;
-    margin-left: 20rem;
+    /* margin-left: 20rem; */
     background-color: white;
     color: purple;
     border: 1px solid purple;
@@ -93,7 +92,6 @@ header{
     font-size: 1.125rem;
     font-weight: 600;
     cursor: pointer;
-    
 }
 
 .hero-button:hover{
@@ -113,6 +111,11 @@ header{
 }
 
 @media only screen and (max-width:680px){
+   
+    .navigation{
+        justify-content: center;
+    }
+   
     .logo{
         display: none;
     }
