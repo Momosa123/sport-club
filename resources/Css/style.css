@@ -38,7 +38,7 @@ header{
     margin: 0;
     display: flex;
     justify-content: center;
-  
+   
     
 }
 
@@ -66,10 +66,13 @@ header{
     background-color: rgba(155, 89, 182, 0.5);
     background-blend-mode: overlay;
     border: 1px solid gray;    
+    display: flex;
+    justify-content: start;
+    
 }
 
 .hero-content{
-    width: 30rem;
+    width: auto;
     height: auto;
     margin: 4rem 0 1.5rem 4rem;
     text-align: center;
